@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/dist/output.css">
-</head>
-<body>
-    <h1 class="text-red-500">Hello</h1>
-</body>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" type="text/css" href="/src/Style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between items-center my-[20px] mx-[67px] min-h-[65px] relative"
+    >
+      <div class=" ">
+        <img class="max-w-xs" src="" alt="Logo" />
+      </div>
+      <div class="nav-links flex relative">
+        <div class="transform hover:-translate-y-1/4 transition duration-300">
+          <a class="px-8" href="#hero-section">Home</a>
+        </div>
+        <div class="transform hover:-translate-y-1/4 transition duration-300">
+          <a class="px-8" href="">Projects</a>
+        </div>
+        <div class="transform hover:-translate-y-1/4 transition duration-300">
+          <a class="px-8" href="">About</a>
+        </div>
+      </div>
+      <div class="btn transform origin-right hover:scale-x-125 transition duration-300">
+        <a href="mailto:abdna59@gmail.com " _target="_blank" class="">Contact</a>
+      </div>
+    </nav>
+    <div class="container">
+      <section id ="hero-section" class=" max-w-6xl hero-section">
+        <div class="max-w-[810px] mt-[55px] mb-0 mx-auto overflow-hidden relative">
+          <div class="z-30">
+            <div class="img-wrapper">
+              <img src="/Assests/Black-and-White-thired.png" alt="hero section image" class="hero-img ">
+            </div>
+          </div>
+          <h1 class="intro-one drop-in">Front-End</h1>
+          <h1 class="intro-two tracking-widest drop-in-2">Developer</h1>
+          <div class="flex justify-center">
+            <a class="mr-5 transform origin hover:scale-x-110 transition duration-300 hire-me-btn" href="https://api.whatsapp.com/send?phone=00905511009470">You need a developer</a>
+            <a class="transform origin hover:scale-x-110 transition duration-300 cv-btn" href="/Assests/CV.pdf" download="CV.pdf">Download CV</a>
+          </div>
+        </div>
+      </section>
+      <div class="mx-auto w-[75%] h-[1px] bg-[#c1b9b9]"></div>
+      <section id="projects-section">
+        <h2>Projects</h2>
+      </section>
+    </div>
+
+
+    <script src="/index.js">
+    </script>
+  </body>
 </html>

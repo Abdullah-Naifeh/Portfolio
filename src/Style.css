@@ -1,3 +1,204 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Sfprodisplay";
+    src: url(/Assests/sf-pro-display/SF-Pro-Display-Light.otf) format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Sfprodisplay";
+    src: url(/Assests/sf-pro-display/SF-Pro-Display-Medium.otf) format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Media Sans Semicondensed";
+    src: url(/Assests/media-font/mediasanssemicondensed-bold-TRIAL-BF63c75479cdb92.otf) format("opentype");
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html , body{
+    background: #f8f3f0;
+}
+
+/* Navbar */
+
+ .nav-links a{
+    font-family: "Sfprodisplay" , Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #1b1b1b;
+}
+ .nav-links a:hover{
+    cursor: pointer;
+} 
+
+.nav-links a:active{
+    font-family: "Sfprodisplay" , Arial , sans-serif;
+    font-weight: 500;
+}
+
+
+nav .btn a{
+    font-family: "Sfprodisplay" , Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 10px 32px;
+    background-color: #FFB066;
+    border: #FFB066 1px solid;
+    border-radius: 0.28rem;
+    text-align: center;
+    line-height: 30px;
+} 
+nav .btn a:hover{
+    box-shadow: 0 32px 32px 0 rgb(27 27 27 / 10%), 0 16px 16px 0 rgb(27 27 27 / 10%), 0 8px 8px 0 rgb(27 27 27 / 10%), 0 4px 4px 0 rgb(27 27 27 / 10%), 0 2px 2px 0 rgb(27 27 27 / 10%);
+    letter-spacing: 0.5px;
+    font-size: 18.3px;   
+} 
+/* Container */
+.container{
+    max-width: 1440px;
+}
+
+.hero-section{
+    margin : 0 auto;
+}
+
+.intro-one{
+    font-family: "Media Sans Semicondensed", impact , sans-serif;
+    font-weight: 700;
+    font-size: 173px;
+    text-align: center;
+    line-height: 160px;
+    margin: 0;
+    -webkit-text-stroke: #14214d 1px;
+    color: #14214d;
+}
+.intro-one:hover{
+    color: transparent;
+    -webkit-text-stroke: #14214d 1px;
+}
+.intro-two{
+    font-family: "Media Sans Semicondensed", impact , sans-serif;
+    font-weight: 700;
+    font-size: 173px;
+    text-align: center;
+    line-height: 160px;
+    margin-bottom: 49px;
+    color: transparent;
+    -webkit-text-stroke: #14214d 1px;
+}
+.intro-two:hover{
+    color: #14214d;
+    -webkit-text-stroke: #14214d 1px;
+}
+
+/* Intro animation */
+
+.drop-in {
+    animation: drop-in 1.5s ease 200ms backwards;
+   }
+   
+   @keyframes drop-in {
+    from {
+     opacity: 0;
+     transform: translateX(100px);
+    }
+    to {
+     opacity: 1;
+     transform: translateX(0px);
+    }
+   }
+
+.drop-in-2 {
+    animation: drop-in-2 1.5s ease 200ms backwards;
+   }
+   
+   @keyframes drop-in-2 {
+    from {
+     opacity: 0;
+     transform: translateX(-100px);
+    }
+    to {
+     opacity: 1;
+     transform: translateX(0px);
+    }
+   }
+
+.hero-img{
+    width: 375px;
+    height: 500px;
+    position: absolute;
+    left: 180px;
+    bottom: 50px;
+    animation: hero-img 3s ease 200ms backwards;
+}
+
+@keyframes hero-img {
+    from {
+     opacity: 0;
+     transform: translateY(100px);
+    }
+    to {
+     opacity: 1;
+     transform: translateY(0px);
+    }
+   }
+
+.hire-me-btn{
+    font-family: "Sfprodisplay" , Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #FFB066;
+    border: #FFB066 1px solid;
+    border-radius: 0.28rem;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 70px;
+}
+
+.cv-btn{
+    font-family: "Sfprodisplay" , Arial , sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: #000000 1px solid;
+    border-radius: 0.28rem;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 70px;
+}
+
+.hire-me-btn:hover,
+.cv-btn:hover{
+    box-shadow: 0 32px 32px 0 rgb(27 27 27 / 10%), 0 16px 16px 0 rgb(27 27 27 / 10%), 0 8px 8px 0 rgb(27 27 27 / 10%), 0 4px 4px 0 rgb(27 27 27 / 10%), 0 2px 2px 0 rgb(27 27 27 / 10%);
+}
+
+/* Projects Section */
+
+h2{
+    font-family: "Media Sans Semicondensed", impact , sans-serif;
+    font-weight: 700;
+    font-size: 103px;
+    text-align: center;
+    line-height: 160px;
+    margin: 0;
+    -webkit-text-stroke: black 1px;
+}
